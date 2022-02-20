@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"); /*telechargement des polices*/
+
+:root {
+  --blue: #0065fc; /* Déclaration d'une variable css*/
+  --clearblue: #deebff; /* Déclaration d'une variable css*/
+  --grey: #f2f2f2; /* Déclaration d'une variable css*/
+}
+
+* {
+  box-sizing: border-box; /*retire les margin et padding*/
+  font-family: "Raleway", "sans-serif"; /*si probleme de dl passe en sans-serif*/
+}
+
+ul {
+  list-style-type: none; /*retire les puce*/
+  display: flex; /*declaration du flex*/
+  padding: 0; /*retire la bordure interieur*/
+  margin: 0; /*retire la marge exterieur*/
+}
+
+/*header*/
+a {
+  color: black; /*couleur de la police noire*/
+  text-decoration: none; /*retire le surlignage*/
+  width: 100%; /*prend toute la place*/
+}
+
+nav {
+  display: flex; /*cree mon diplay flex*/
+  justify-content: flex-end; /*place tout en fin de ma box*/
+  align-items: center; /*centrage dans la nav*/
+  flex-wrap: wrap; /*passe en mode block si besoin*/
+}
+
+nav a {
+  padding: 32px; /*bordure interieur*/
+  border-top: 3px solid transparent; /*bordure superieur tips pour eviter le decalage */
+  border-bottom: 3px solid transparent; /*bordure inferieur tips pour eviter le decalage*/
+}
+
+nav a:hover {
+  border-top: 3px solid #0065fc; /*bordure superieur*/
+}
+
+.logo {
+  margin-right: auto; /*dit a mon logo de prendre toute la place*/
+  padding: 0 16px; /*bordure interieur sans padding vertical*/
+}
+
+.ul_hebergements_activites a:hover {
+  color: #0065fc; /*couleur du text*/
+}
+
+header {
+  max-width: 992px; /*taille max de ma page*/
+  margin: auto; /*centrage auto*/
+}

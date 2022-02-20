@@ -140,3 +140,80 @@ body {
 .div_barre_de_recherche__input_button {
   padding: 0;
 }
+
+/*filtre*/
+
+.h2_filres {
+  margin: 0 32px 0 0;
+}
+
+.filtres_list {
+  display: inline-flex; /*flex-box en ligne*/
+  align-items: center; /*centrage dans la nav*/
+  margin: 32px 0;
+  flex-wrap: wrap; /*la flexbox peut aller a la ligne si le besoin se fait sentir*/
+}
+
+.icon-filter {
+  color: var(--blue);
+}
+
+.filtres {
+  margin-right: 16px;
+  /*margin-top: 1rem;*/
+  border: 2px solid var(--grey);
+  border-radius: 32px;
+  display: inline-flex;
+  align-items: center; /*centrage dans la nav*/
+  cursor: pointer;
+  transition: transform 0.2s; /*transition sur l'opaciter*/
+}
+
+.filtres_div {
+  background-color: #deebff;
+  border-radius: 100%;
+  height: 48px;
+  width: 48px;
+  min-height: 56px;
+  min-width: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+
+.filtres_span {
+  margin: 0 16px;
+  white-space: nowrap;
+  font-weight: bold; /*police en gras dans l'exemle de text*/
+}
+
+.info_filtres {
+  display: inline-flex;
+  align-items: center;
+}
+
+.div_info_div {
+  border-radius: 100%;
+  border: 2px solid var(--grey);
+  min-height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+
+.div_info_div_span {
+  margin: 0 16px;
+  white-space: nowrap;
+}
+
+.filtres:hover {
+  transform: scale(1.02); /*grandi de 1%*/
+  background-color: #f2f5f7;
+}
+
+.fas.fa-info {
+  color: var(--blue);
+}

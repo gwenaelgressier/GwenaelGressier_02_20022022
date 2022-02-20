@@ -44,7 +44,7 @@ nav a:hover {
 
 .logo {
   margin-right: auto; /*dit a mon logo de prendre toute la place*/
-  padding: 0 16px; /*bordure interieur sans padding vertical*/
+  padding: 0 16px; /*bordure interieur horizontal sans padding vertical*/
 }
 
 .ul_hebergements_activites a:hover {
@@ -54,4 +54,89 @@ nav a:hover {
 header {
   max-width: 992px; /*taille max de ma page*/
   margin: auto; /*centrage auto*/
+}
+
+main {
+  max-width: 992px; /*taille max de ma page*/
+  margin: auto; /*centrage auto*/
+}
+body {
+  margin: 0;
+}
+/*main corp*/
+
+.corp {
+  display: block;
+  max-width: 992px;
+  margin: auto;
+  padding: 0 32px; /*bordure interieur horizontal sans padding vertical*/
+  margin-bottom: 48px;
+}
+
+.corp h1,
+.corp p {
+  margin-bottom: 16px;
+}
+/*barre de recherche*/
+.div_barre_de_recherche {
+  display: inline-flex; /*cree mon diplay flex*/
+  font-size: 16px; /*taille de la police dans le bouton*/
+}
+.div_barre_de_recherche > *,
+.div_barre_de_recherche input::placeholder {
+  font-size: 16px;
+}
+
+.div_barre_de_recherche .fas.fa-map-marker-alt {
+  background-color: var(--grey); /*appelle de ma var*/
+  border-radius: 16px 0 0 16px; /*fait les arondi commence en haut a gauche et en sens horaire*/
+  cursor: pointer; /*change le curseur en mode editeur de text*/
+  padding: 16px;
+  font-weight: bold; /*police en gras dans l'exemle de text*/
+  transition: background-color 0.2s; /*transition sur la couleur*/
+}
+
+.div_barre_de_recherche .fas.fa-map-marker-alt:hover {
+  background-color: LightGray; /*change la couleur de mon i quand survolé*/
+}
+
+.div_barre_de_recherche input {
+  flex-basis: 256px; /*longueur de l'imput*/
+  border: none; /*efface les barre de l'input*/
+  border-top: 2px solid var(--grey);
+  border-bottom: 2px solid var(--grey);
+  outline: none; /*retire la bordure noir quand focus a voir si il faut ou pas??*/
+  cursor: text; /*change le curseur en mode editeur de text*/
+  overflow: hidden; /*ne fonctionne pas */
+  padding: 16px 27px;
+}
+
+.div_barre_de_recherche input::placeholder {
+  color: black; /*couleur exemple de text */
+  font-weight: bold; /*police en gras dans l'exemle de text*/
+  padding: 0;
+}
+
+.div_barre_de_recherche button {
+  border-radius: 0 16px 16px 0; /*cree les arrondis*/
+  background-color: var(--blue); /*appelle de ma var*/
+  color: white; /*couleur ecriture blanche*/
+  font-weight: bold; /*mes en gras*/
+  border-color: transparent; /*ou border:none*/
+  cursor: pointer; /*transforme le curseur en main*/
+  transition: background-color 0.3s; /*transition sur l'opaciter*/
+  margin: 0 -16px;
+  padding: 16px 16px;
+}
+
+.div_barre_de_recherche button:hover {
+  background-color: #003c96; /*change la couleur de mon bouton recherche quand survolé*/
+}
+
+.fas.fa-search {
+  display: none; /*cache la loupe*/
+}
+
+.div_barre_de_recherche__input_button {
+  padding: 0;
 }

@@ -231,10 +231,10 @@ body {
 }
 
 .titre_carte_hebergement {
-  padding: 16px;
+  padding: 32px;
   flex-basis: 66%;
   background-color: var(--grey);
-  margin-right: 16px;
+  margin-right: 46px;
   border-radius: 16px;
 }
 
@@ -252,7 +252,7 @@ body {
 .titre_carte_populaire {
   background-color: var(--grey);
   flex-basis: 33%;
-  padding: 16px;
+  padding: 32px;
   border-radius: 16px;
 }
 
@@ -360,8 +360,56 @@ body {
 .blabla_populaires_espace {
   flex: 1;
 }
-
 /*activite*/
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  height: 480px;
+  gap: 32px;
+}
+
+.column1 {
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+  height: 480px;
+}
+
+.column3 {
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+  height: 480px;
+}
+
+.column > div {
+  flex: 1;
+}
+
+.column:nth-child(2) > div:nth-child(1) {
+  flex: 2;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+}
+
+.column:nth-child(2) > div:nth-child(2) {
+  flex: 1;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+}
+
+.column:nth-child(4) > div:nth-child(1) {
+  flex: 1;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+}
+
+.column:nth-child(4) > div:nth-child(2) {
+  flex: 1;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+}
+
 .section_activite {
   display: flex;
   flex-direction: row;
@@ -371,16 +419,12 @@ body {
   width: auto;
   margin-bottom: 64px;
 }
-.activites h3 {
-  display: inline-block;
-  width: 100%;
-  align-items: flex-start;
-}
 .activites {
   display: flex;
   flex-direction: column;
   width: fit-content;
   height: 80%;
+  width: 100%;
 }
 .carte_activites {
   display: flex;
@@ -389,84 +433,64 @@ body {
   flex-wrap: wrap;
   gap: 32px;
 }
-.colonne_1_et_3 {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: black;
-  height: 500px;
-  width: 22%;
-  border-radius: 15px;
-  box-shadow: 0px 0px 6px 0px #0000002e;
+.activites h3 {
+  display: inline-block;
+  width: 100%;
+  align-items: flex-start;
 }
-.colonne_1_et_3 img {
-  border-radius: 10px 10px 0 0;
-  height: 90%;
+
+.image1 {
+  width: 100%;
+  height: 415px;
   object-fit: cover;
+  border-radius: 16px 16px 0 0;
 }
-
-.colonne2_4 {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
-  width: 22%;
-  height: 500px;
-  border-radius: 15px;
-}
-
-.colonne2_4_images {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: black;
-  border-radius: 10px;
-  box-shadow: 0px 0px 6px 0px #0000002e;
-}
-
-.colonne2_4_images img {
+.image2 {
+  width: 100%;
+  height: 233px;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 16px 16px 0 0;
 }
 
-.height_image1 {
-  height: 77%;
+.image3 {
+  width: 100%;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
 }
-.height_image2 {
-  height: 65%;
+.image4 {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
 }
-.height_image3 {
-  height: 70%;
+.image5 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  height: 159px;
 }
-.height_image4 {
-  height: 72%;
-}
-
-.height_a_1 {
-  height: 55%;
-}
-
-.height_a_2 {
-  height: 35%;
-}
-
-.height_a_3 {
-  height: 45%;
-}
-
-.height_a_4 {
-  height: 45%;
+.image6 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  height: 159px;
 }
 
 .lieu {
   padding-left: 16px;
+  font-size: 90%;
 }
 
-.activites_hover:hover {
+.column1:hover,
+.column:nth-child(2) > div:nth-child(1):hover,
+.column:nth-child(2) > div:nth-child(2):hover,
+.column3:hover,
+.column:nth-child(4) > div:nth-child(1):hover,
+.column:nth-child(4) > div:nth-child(2):hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
 }
-
 /*footer*/
 footer {
   background-color: var(--grey);
@@ -491,4 +515,145 @@ footer div {
 .colonne_footer a {
   display: block;
   margin-bottom: 11px;
+}
+
+/*media*/
+@media (max-width: 992px) {
+  .carte_hebergement {
+    margin: 0 0 32px 0;
+  }
+
+  .column {
+    flex-direction: unset;
+    width: 100%;
+    height: 240px;
+  }
+
+  .column1,
+  .column3 {
+    width: 100%;
+    height: 240px;
+  }
+
+  .column:nth-child(2) > div:nth-child(1) {
+    flex: 1;
+    height: 240px;
+  }
+
+  .column:nth-child(2) > div:nth-child(2) {
+    height: 240px;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6 {
+    height: 178px;
+  }
+
+  .column:nth-child(2) > div:nth-child(2) {
+    height: 240px;
+  }
+
+  .activites {
+    padding: 0 32px;
+  }
+
+  .hebergement_populaire {
+    flex-direction: column-reverse;
+    margin: 16px 0 0 0;
+  }
+
+  .carte_hebergement > li {
+    width: 40%;
+  }
+
+  .titre_carte_hebergement {
+    background-color: white;
+    margin-right: 0;
+  }
+
+  .corp {
+    padding: 0 16px;
+    display: block;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .padding1 {
+    padding: 0 16px;
+  }
+
+  .titre_carte_populaire {
+    border-radius: 0;
+  }
+
+  .colonne_footer {
+    padding: 16px 32px;
+  }
+
+  .titre_carte_hebergement > p > a {
+    margin: 0;
+  }
+}
+
+/*media*/
+@media (max-width: 768px) {
+  .column {
+    flex-direction: column;
+  }
+
+  .column768 {
+    height: 504px;
+  }
+
+  footer div {
+    display: block;
+  }
+
+  /*header*/
+  .ul_hebergements_activites {
+    order: 1; /*changemment ordre des flex*/
+    flex-basis: 100%; /*= au wight mais en flex*/
+    display: flex; /*cree mon diplay flex*/
+    gap: 0px;
+  }
+  .ul_hebergements_activites li {
+    flex-basis: 50%; /*prend 50% de l'ecran*/
+    text-align: center; /*alignement du text*/
+    border-bottom: 3px solid #f2f2f2; /*bordure inferieur*/
+    border-top: 3px solid transparent;
+    padding: 32px;
+  }
+  .ul_hebergements_activites > li:hover {
+    border-top-color: transparent; /*bordure superieur tips pour eviter le decalage */
+    border-bottom: 3px solid #0065fc; /*bordure inferieur*/
+  }
+  .ul_hebergements_activites > li > a:hover {
+    border-top-color: transparent; /*bordure superieur tips pour eviter le decalage */
+  }
+
+  /*barre de recherche*/
+  .div_barre_de_recherche .recherche {
+    display: none;
+  }
+
+  .fas.fa-search {
+    display: inline;
+  }
+
+  .div_barre_de_recherche button {
+    border-radius: 16px;
+  }
+
+  .carte_hebergement > li {
+    width: 100%;
+  }
+
+  .titre_carte_populaire {
+    border-radius: 0;
+  }
 }

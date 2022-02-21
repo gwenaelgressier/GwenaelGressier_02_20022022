@@ -369,7 +369,7 @@ body {
   justify-content: space-between;
   height: auto;
   width: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 64px;
 }
 .activites h3 {
   display: inline-block;
@@ -465,4 +465,30 @@ body {
 .activites_hover:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition-duration: 0.4s;
+}
+
+/*footer*/
+footer {
+  background-color: var(--grey);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+footer div {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.colonne_footer {
+  display: block;
+
+  padding: 16px 32px;
+}
+.colonne_footer a {
+  display: block;
+  margin-bottom: 11px;
 }

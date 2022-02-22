@@ -165,7 +165,6 @@ body {
 
 .filtres {
   margin-right: 16px;
-  /*margin-top: 16px;*/ /*a metre dans le media*/
   border: 2px solid var(--grey); /*cree une bordure de 2px de large trait plein couleur grise*/
   border-radius: 32px;
   display: inline-flex; /*mes la flex box en inline*/
@@ -370,6 +369,12 @@ body {
   gap: 32px;
 }
 
+.column h4 {
+  margin: 0;
+  padding: 19px 0 25px 0;
+  padding-left: 16px;
+  font-size: 90%;
+}
 .column1 {
   box-shadow: 0px 0px 6px 0px #0000002e;
   border-radius: 16px;
@@ -382,9 +387,6 @@ body {
   height: 480px;
 }
 
-.column > div {
-  flex: 1;
-}
 /*1er enfant div de mon 2em enfant de column*/
 .column:nth-child(2) > div:nth-child(1) {
   flex: 2; /*prend 2 place dans la colonne*/
@@ -478,11 +480,6 @@ body {
   height: 159px;
 }
 
-.lieu {
-  padding-left: 16px;
-  font-size: 90%;
-}
-
 .column1:hover,
 .column:nth-child(2) > div:nth-child(1):hover,
 .column:nth-child(2) > div:nth-child(2):hover,
@@ -491,11 +488,6 @@ body {
 .column:nth-child(4) > div:nth-child(2):hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition-duration: 0.2s;
-}
-
-.lieu h4 {
-  margin: 0;
-  padding: 19px 0 25px 0;
 }
 
 /*footer*/
@@ -617,7 +609,7 @@ footer div {
     flex-direction: column;
   }
 
-  .column768 {
+  .column768px {
     height: 504px;
   }
 

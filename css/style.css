@@ -35,12 +35,12 @@ nav {
 
 nav a {
   padding: 32px; /*bordure interieur*/
-  border-top: 3px solid transparent; /*bordure superieur tips pour eviter le decalage */
-  border-bottom: 3px solid transparent; /*bordure inferieur tips pour eviter le decalage*/
+  border-top: 4px solid transparent; /*bordure superieur tips pour eviter le decalage */
+  border-bottom: 4px solid transparent; /*bordure inferieur tips pour eviter le decalage*/
 }
 
 nav a:hover {
-  border-top: 3px solid var(--blue); /*bordure superieur*/
+  border-top: 4px solid var(--blue); /*bordure superieur*/
 }
 
 .logo {
@@ -55,6 +55,7 @@ nav a:hover {
 header {
   max-width: 1440px; /*taille max de ma page*/
   margin: auto; /*centrage auto*/
+  padding: 0 0 0 32px;
 }
 
 main {
@@ -74,14 +75,12 @@ body {
   margin-bottom: 48px;
 }
 
-.corp h1 {
+.gros_gras {
   margin-bottom: 16px;
   font-size: 150%;
+  font-weight: bold; /*police en gras dans l'exemle de text*/
 }
 
-.corp p {
-  margin-bottom: 16px;
-}
 /*barre de recherche*/
 .div_barre_de_recherche {
   display: inline-flex; /*cree mon diplay flex*/
@@ -147,8 +146,12 @@ body {
 }
 
 /*filtre*/
+.wrapper_list_span {
+  flex-direction: column;
+  display: flex;
+}
 
-.h2_filres {
+.p_filres {
   margin: 0 16px 0 0;
 }
 
@@ -164,7 +167,7 @@ body {
 }
 
 .filtres {
-  margin-right: 16px;
+  margin: 10px 0 0 10px;
   border: 2px solid var(--grey); /*cree une bordure de 2px de large trait plein couleur grise*/
   border-radius: 32px;
   display: inline-flex; /*mes la flex box en inline*/
@@ -210,7 +213,6 @@ body {
 
 .div_info_div_span {
   margin: 0 16px;
-  white-space: nowrap;
 }
 
 .filtres:hover {
@@ -388,7 +390,7 @@ body {
 
 /*1er enfant div de mon 2em enfant de column*/
 .column:nth-child(2) > div:nth-child(1) {
-  flex: 2; /*prend 2 place dans la colonne*/
+  flex: 1; /*prend 2 place dans la colonne*/
   box-shadow: 0px 0px 6px 0px #0000002e;
   border-radius: 16px;
 }
@@ -449,14 +451,14 @@ body {
 }
 .image2 {
   width: 100%;
-  height: 233px;
+  height: 190px;
   object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
 
 .image3 {
   width: 100%;
-  height: 84px;
+  height: 128px;
   object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
@@ -517,6 +519,14 @@ footer div {
 
 /*media*/
 @media (max-width: 992px) {
+  header {
+    padding: 0;
+  }
+
+  .logo {
+    padding: 0 32px;
+  }
+
   .carte_hebergement {
     margin: 0 0 32px 0;
   }
@@ -628,12 +638,14 @@ footer div {
     text-align: center; /*alignement du text*/
     border-bottom: 3px solid var(--grey); /*bordure inferieur*/
     border-top: 3px solid transparent;
-    padding: 32px;
+    padding: 32px 0;
   }
+
   .ul_hebergements_activites > li:hover {
     border-top-color: transparent; /*bordure superieur tips pour eviter le decalage */
     border-bottom: 3px solid var(--blue); /*bordure inferieur*/
   }
+
   .ul_hebergements_activites > li > a:hover {
     border-top-color: transparent; /*bordure superieur tips pour eviter le decalage */
   }

@@ -22,18 +22,17 @@
     <!--nav bar-->
     <header>
       <nav>
-        <img class="logo" src="./images/logo/Booki.png" alt="logo Booki" />
+        <h1 hidden>Booki</h1>
+        <img class="logo" src="./images/logo/Booki.png" alt="Booki" />
         <ul class="ul_hebergements_activites">
           <li><a href="#hebergement_ancre">Hébergements</a></li>
           <li><a href="#activités_ancre">Activités</a></li>
         </ul>
       </nav>
-    </header>
-    <main class="corp">
       <!--texte avant barre de recherche-->
-      <h1 class="padding1">
+      <p class="padding1 gros_gras">
         Trouvez votre hébergement pour des vacances de rêve
-      </h1>
+      </p>
       <p class="padding1">En plein centre ville ou en pleine nature</p>
       <!--barre de recherche-->
       <!--icon markermap-->
@@ -51,43 +50,48 @@
         </button>
       </form>
       <br />
+    </header>
+    <main class="corp">
       <!--filtre-->
-      <div class="filtres_list padding1">
-        <h2 class="h2_filres">Filtres</h2>
-        <div class="les_filtres">
-          <div class="filtres">
-            <div class="filtres_div">
-              <i class="fas fa-money-bill-wave icon-filter"></i>
+      <div class="wrapper_list_span">
+        <div class="filtres_list padding1">
+          <p class="p_filres gros_gras">Filtres</p>
+          <div class="les_filtres">
+            <div class="filtres">
+              <div class="filtres_div">
+                <i class="fas fa-money-bill-wave icon-filter"></i>
+              </div>
+              <span class="filtres_span">Économique</span>
             </div>
-            <span class="filtres_span">Économique</span>
-          </div>
-          <div class="filtres">
-            <div class="filtres_div">
-              <i class="fas fa-child icon-filter"></i>
+            <div class="filtres">
+              <div class="filtres_div">
+                <i class="fas fa-child icon-filter"></i>
+              </div>
+              <span class="filtres_span">Familial</span>
             </div>
-            <span class="filtres_span">Familial</span>
-          </div>
-          <div class="filtres">
-            <div class="filtres_div">
-              <i class="fas fa-heart icon-filter"></i>
+            <div class="filtres">
+              <div class="filtres_div">
+                <i class="fas fa-heart icon-filter"></i>
+              </div>
+              <span class="filtres_span">Romantique</span>
             </div>
-            <span class="filtres_span">Romantique</span>
-          </div>
-          <div class="filtres">
-            <div class="filtres_div">
-              <i class="fas fa-dog icon-filter"></i>
+            <div class="filtres">
+              <div class="filtres_div">
+                <i class="fas fa-dog icon-filter"></i>
+              </div>
+              <span class="filtres_span">Animaux autorisés</span>
             </div>
-            <span class="filtres_span">Animaux autorisés</span>
           </div>
         </div>
-      </div>
-      <div class="info_filtres padding1">
-        <div class="div_info_div">
-          <i class="fas fa-info"></i>
+        <div class="info_filtres padding1">
+          <div class="div_info_div">
+            <i class="fas fa-info"></i>
+          </div>
+          <br />
+          <span class="div_info_div_span"
+            >Plus de 500 logements sont disponibles dans cette ville</span
+          >
         </div>
-        <span class="div_info_div_span"
-          >Plus de 500 logements sont disponibles dans cette ville</span
-        >
       </div>
       <!--hebergements et populaire-->
       <div id="hebergement_ancre" class="hebergement_populaire">

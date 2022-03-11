@@ -1,0 +1,46 @@
+/*header*/
+a {
+  color: black; /*couleur de la police noire*/
+  text-decoration: none; /*retire le surlignage*/
+  width: 100%; /*prend toute la place*/
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*centrage dans la nav*/
+  flex-wrap: wrap; /*passe en mode block si besoin*/
+}
+
+nav a {
+  padding: 32px; /*bordure interieur*/
+  border-top: 4px solid transparent; /*bordure superieur tips pour eviter le decalage */
+  border-bottom: 4px solid transparent; /*bordure inferieur tips pour eviter le decalage*/
+}
+
+nav a:hover {
+  border-top: 4px solid var(--blue); /*bordure superieur*/
+}
+
+.logo {
+  margin-right: auto; /*dit a mon logo de prendre toute la place*/
+  padding: 0 16px; /*bordure interieur horizontal sans padding vertical*/
+}
+
+.ul_hebergements_activites a:hover {
+  color: var(--blue); /*couleur du text*/
+}
+
+header {
+  max-width: 1440px; /*taille max de ma page*/
+  margin: auto; /*centrage auto*/
+  padding: 0 0 0 32px;
+}
+
+main {
+  max-width: 1440px; /*taille max de ma page*/
+  margin: auto; /*centrage auto*/
+}
+body {
+  margin: 0;
+}

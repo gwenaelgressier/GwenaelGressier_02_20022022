@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"); /*telechargement des polices*/
+
+* {
+  box-sizing: border-box; /*retire les margin et padding*/
+  font-family: "Raleway", "sans-serif"; /*si probleme de dl passe en sans-serif*/
+}
+
+ul {
+  list-style-type: none; /*retire les puce*/
+  display: flex; /*declaration du flex*/
+  padding: 0; /*retire la bordure interieur*/
+  margin: 0; /*retire la marge exterieur*/
+  gap: 16px; /*espace tout le contenu*/
+}

@@ -1,0 +1,154 @@
+/*media*/
+@media (max-width: 992px) {
+  header {
+    padding: 0;
+  }
+
+  .logo {
+    padding: 0 32px;
+  }
+
+  .carte_hebergement {
+    margin: 0 0 32px 0;
+  }
+
+  .column {
+    flex-direction: unset;
+    width: 100%;
+    height: 240px;
+  }
+
+  .column1,
+  .column3 {
+    width: 100%;
+    height: 240px;
+  }
+
+  .column:nth-child(2) > div:nth-child(1) {
+    flex: 1;
+    height: 240px;
+  }
+
+  .column:nth-child(2) > div:nth-child(2) {
+    height: 240px;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6 {
+    height: 178px;
+  }
+
+  .column:nth-child(2) > div:nth-child(2) {
+    height: 240px;
+  }
+
+  .activites {
+    padding: 0 32px;
+  }
+
+  .hebergement_populaire {
+    flex-direction: column-reverse;
+    margin: 16px 0 0 0;
+  }
+
+  .carte_hebergement > li {
+    width: 40%;
+  }
+
+  .titre_carte_hebergement {
+    background-color: white;
+    margin-right: 0;
+  }
+
+  .corp {
+    padding: 0 16px;
+    display: block;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .padding1 {
+    padding: 0 16px;
+  }
+
+  .titre_carte_populaire {
+    border-radius: 0;
+  }
+
+  .colonne_footer {
+    padding: 16px 32px;
+  }
+
+  .titre_carte_hebergement > p > a {
+    margin: 0;
+  }
+}
+
+/*media*/
+@media (max-width: 768px) {
+  .logo {
+    margin: auto;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .column768px {
+    height: 504px;
+  }
+
+  footer div {
+    display: block;
+  }
+
+  /*header*/
+  .ul_hebergements_activites {
+    order: 1; /*changemment ordre des flex*/
+    flex-basis: 100%; /*= au wight mais en flex*/
+    display: flex; /*cree mon diplay flex*/
+    gap: 0px;
+  }
+  .ul_hebergements_activites li {
+    flex-basis: 50%; /*prend 50% de l'ecran*/
+    text-align: center; /*alignement du text*/
+    border-bottom: 3px solid var(--grey); /*bordure inferieur*/
+    border-top: 3px solid transparent;
+    padding: 32px 0;
+  }
+
+  .ul_hebergements_activites > li:hover {
+    border-top-color: transparent; /*bordure superieur tips pour eviter le decalage */
+    border-bottom: 3px solid var(--blue); /*bordure inferieur*/
+  }
+
+  .ul_hebergements_activites > li > a:hover {
+    border-top-color: transparent; /*bordure superieur tips pour eviter le decalage */
+  }
+
+  /*barre de recherche*/
+  .div_barre_de_recherche .recherche {
+    display: none;
+  }
+
+  .fas.fa-search {
+    display: inline;
+  }
+
+  .div_barre_de_recherche button {
+    border-radius: 16px;
+  }
+
+  .carte_hebergement > li {
+    width: 100%;
+  }
+
+  .titre_carte_populaire {
+    border-radius: 0;
+  }
+}

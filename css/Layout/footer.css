@@ -1,0 +1,25 @@
+/*footer*/
+footer {
+  background-color: var(--grey);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+footer div {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.colonne_footer {
+  display: block;
+
+  padding: 16px 32px;
+}
+.colonne_footer a {
+  display: block;
+  margin-bottom: 11px;
+}
